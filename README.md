@@ -13,7 +13,11 @@ npm install argio
 
 ## Get Started
 ```
-// command line: node app.js subcommand1 subcommand2 -p1 v1 v2 v3 --s1 -p2 v4
+// command line
+$ node app.js subcommand1 subcommand2 -p1 v1 v2 v3 --s1 -p2 v4
+```
+
+```
 const argio = require('argio');
 const parser = argio()
 
