@@ -30,9 +30,12 @@ const parser = argio()
         'subcommand2' ],
      p1: [ 'v1', 'v2', 'v3' ],
      s1: true,
-     p2: [ 'v4' ] },
+     p2: [ 'v4' ]
+   },
   get: [Function: get],
-  subcommand: 'subcommand1' }
+  attributes: ['p1', 's1', 'p2'],
+  subcommand: 'subcommand1'
+}
 
 // check switches
 parser.get('s1') // true

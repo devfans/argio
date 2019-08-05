@@ -1,6 +1,6 @@
 {
   "name": "argio",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "nodejs light-weight commandline arguments parser",
   "main": "index.js",
   "scripts": {

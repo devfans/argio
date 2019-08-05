@@ -1,14 +1,16 @@
 'use strict'
 
 module.exports = function parse() {
-  var params = { subcommands: [] };
+  var params = { subcommands: [], attributes: [] };
   var cur = null;
   process.argv.forEach(function(p) {
     if (p.startsWith('--')) {
       cur = null;
       params[p.substr(2)] = true
+      params.attributes.push(p.substr(2))
     } else if (p.startsWith('-')) {
       cur = p.substr(1)
+      params.attributes.push(p.substr(1))
     } else if (cur === null) {
       params.subcommands.push(p)
     } else if (params[cur] === undefined){
